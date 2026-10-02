@@ -1,0 +1,26 @@
+{
+  "short_name": "color2filter",
+  "name": "color2filter",
+  "icons": [
+    {
+      "src": "/color2filter-web/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/color2filter-web/icon-mask.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/color2filter-web/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "black",
+  "background_color": "black"
+}
