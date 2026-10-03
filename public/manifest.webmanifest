@@ -8,15 +8,33 @@
       "sizes": "192x192"
     },
     {
-      "src": "/color2filter-web/icon-mask.png",
+      "src": "/color2filter-web/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/color2filter-web/icon-192-mask.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/color2filter-web/icon-512-mask.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
     },
     {
-      "src": "/color2filter-web/icon-512.png",
+      "src": "/color2filter-web/icon-192-mask-monochrome.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "purpose": "monochrome maskable"
+    },
+    {
+      "src": "/color2filter-web/icon-512-mask.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "monochrome maskable"
     }
   ],
   "start_url": ".",
