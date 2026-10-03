@@ -1,0 +1,3 @@
+[submodule "vendor/color2filter"]
+	path = vendor/color2filter
+	url = https://github.com/ParasailNumerous/color2filter.git

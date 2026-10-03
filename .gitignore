@@ -1,5 +1,7 @@
 # build output
 dist/
+# generated wasm-pack output (rebuilt via `pnpm run build:wasm`)
+src/generated/
 # generated types
 .astro/
 

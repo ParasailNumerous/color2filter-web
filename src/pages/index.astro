@@ -1,17 +1,42 @@
 ---
-import '../styles/global.css'
+import Interactive from "../components/Interactive.svelte";
+import Base from "../layouts/Base.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base>
+	<div class="flex flex-col sm:flex-row items-center justify-evenly gap-4">
+		<img
+			width="192"
+			height="192"
+			class="w-[192px] h-auto"
+			fetchpriority="high"
+			src="/color2filter-web/logo.png"
+			srcset="/color2filter-web/logo@3x.png 3x, /color2filter-web/logo@2x.png 2x, /color2filter-web/logo.png"
+			alt="Application icon"
+		/>
+		<section class="text-base/7 max-w-sm">
+			<h1 class="text-4xl font-bold mb-2">color2filter</h1>
+			<p>
+				Converts <a
+					target="_blank"
+					href="https://www.w3.org/TR/css-color-4/"
+					>CSS Color Module Level 4</a
+				> colors to deterministic CSS filters.
+			</p>
+			<p class="flex flex-wrap gap-x-2 justify-center text-nowrap">
+				<a
+					target="_blank"
+					href="https://github.com/ParasailNumerous/color2filter-web"
+					>Web app source code</a
+				>
+				<a
+					target="_blank"
+					href="https://github.com/ParasailNumerous/color2filter"
+					>Rust source code</a
+				>
+			</p>
+		</section>
+	</div>
+	<Interactive client:load />
+	<noscript>Enable JavaScript to use this application</noscript>
+</Base>
