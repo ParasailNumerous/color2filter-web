@@ -11,7 +11,7 @@
       "src": "/color2filter-web/icon-192-mask-monochrome.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "monochrome maskable"
+      "purpose": "monochrome"
     },
     {
       "src": "/color2filter-web/icon-192-mask.png",
@@ -28,7 +28,7 @@
       "src": "/color2filter-web/icon-512-mask-monochrome.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "monochrome maskable"
+      "purpose": "monochrome"
     },
     {
       "src": "/color2filter-web/icon-512-mask.png",
