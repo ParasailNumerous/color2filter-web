@@ -44,7 +44,7 @@ a {
 
     --radius-multipler: 2;
     corner-shape: superellipse(1);
-    transition: 350ms corner-shape steps(6, jump-none);
+    transition: 200ms corner-shape steps(6, jump-none);
     &:active, &.active {
       corner-shape: superellipse(2);
     }
