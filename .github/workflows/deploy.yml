@@ -1,4 +1,4 @@
-# Modified from https://docs.astro.build/en/guides/deploy/github/
+ # Modified from https://docs.astro.build/en/guides/deploy/github/
 
 name: Deploy to GitHub Pages
 
@@ -30,9 +30,9 @@ jobs:
           targets: wasm32-unknown-unknown
       - name: Install wasm-pack
         run: |
-          curl -sSfL https://github.com/rustwasm/wasm-pack/releases/download/v0.13.1/wasm-pack-v0.13.1-x86_64-unknown-linux-musl.tar.gz -o /tmp/wasm-pack.tar.gz
+          curl -sSfL https://github.com/rustwasm/wasm-pack/releases/download/v0.15.0/wasm-pack-v0.15.0-x86_64-unknown-linux-musl.tar.gz -o /tmp/wasm-pack.tar.gz
           tar -xzf /tmp/wasm-pack.tar.gz -C /tmp
-          echo "/tmp/wasm-pack-v0.13.1-x86_64-unknown-linux-musl" >> "$GITHUB_PATH"
+          echo "/tmp/wasm-pack-v0.15.0-x86_64-unknown-linux-musl" >> "$GITHUB_PATH"
       - name: Install, build, and upload your site
         uses: withastro/action@3eafd002e65cc31b4f0eae0bb05450d521562247 # v6
         with:
