@@ -20,6 +20,7 @@ export default defineConfig({
       algorithm: 'SHA-256',
       directives: [
         "default-src 'none'",
+        "connect-src 'self'",
         "img-src 'self'"
       ]
     },
