@@ -26,7 +26,8 @@ export default defineConfig({
     },
     scriptDirective: {
       resources: [
-        "'self'", "wasm-unsafe-eval"
+        /* Astro doesn't seem to actually support wasm-unsafe-eval... */
+        "'self'", "wasm-unsafe-eval", "unsafe-eval"
       ],
       strictDynamic: true
     }
