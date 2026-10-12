@@ -13,5 +13,20 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()]
+  },
+
+  security: {
+    csp: {
+      algorithm: 'SHA-256',
+      directives: [
+        "default-src 'none'",
+        "img-src 'self'"
+      ]
+    },
+    scriptDirective: {
+      resources: [
+        "'self'", "wasm-unsafe-eval"
+      ]
+    }
   }
 });
