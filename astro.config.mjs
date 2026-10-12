@@ -26,7 +26,8 @@ export default defineConfig({
     scriptDirective: {
       resources: [
         "'self'", "wasm-unsafe-eval"
-      ]
+      ],
+      strictDynamic: true
     }
   }
 });
