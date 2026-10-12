@@ -8,14 +8,18 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: "https://parasailnumerous.github.io",
-  base: "/color2filter-web",
+  base: "/colour2filter-web",
   integrations: [svelte()],
 
   vite: {
     plugins: [tailwindcss()]
   },
 
-  security: {
+  /* CSP 
+  Disabled because Astro's implementation
+  is missing a bunch of features.
+  :[ */
+  /*security: {
     csp: {
       algorithm: 'SHA-256',
       directives: [
@@ -26,10 +30,10 @@ export default defineConfig({
     },
     scriptDirective: {
       resources: [
-        /* Astro doesn't seem to actually support wasm-unsafe-eval... */
+        /* Astro doesn't seem to actually support wasm-unsafe-eval... 
         "'self'", "wasm-unsafe-eval", "unsafe-eval"
       ],
       strictDynamic: true
     }
-  }
+  }*/
 });
